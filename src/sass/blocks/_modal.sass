@@ -4,6 +4,7 @@
     height: 100%
     top: 0
     background-color: rgba(0, 0, 0, .56)
+    display: none
 .modal
     box-sizing: border-box
     position: absolute
@@ -14,3 +15,31 @@
     min-height: 402px
     background: #F2F2F2
     padding: 38px 40px 40px 40px
+    &__close
+        position: absolute
+        top: 0
+        right: -40px    
+        line-height: 21px
+        font-size: 41px
+        color: $main-color  
+        cursor: pointer
+    &__title
+        text-align: center
+        font-weight: 700
+        font-size: 18px
+        line-height: 19px
+        margin-bottom: 10px
+        color: #0D0D0D
+    &__subtitle
+        text-align: center
+        font-weight: 500
+        font-size: 14px
+        line-height: 14px
+        color: #0D0D0D
+        &_mini
+            line-height: 22px
+    &_mini
+        min-height: 140px
+
+#consultation, #order, #thanks
+    display: none
