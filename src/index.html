@@ -8,11 +8,12 @@
     <title>Pulse</title>
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" type="text/css" href="css/slick.css"/>
+    <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/style.min.css">
 </head>
  
 <body>
-    <section class="promo">
+    <section id="up" class="promo">
         <div class="container">
             <div class="header">
                 <a href="#" class="header__logo">
@@ -71,8 +72,8 @@
                     <div class="advantage__descr">Наши сотрудники всегда готовы поделиться своим опытом,<br> так как сами бегают полумарафоны, переплыли Босфор, готовятся к соревнованиям по триатлону!</div>
                 </div>
                 <div class="advantage__block">
-                    <div class="advantage__icon">
-                        <img src="icon/heart.svg" alt="">
+                    <div class="advantage__icon advantage__icon_animated">
+                        <img  src="icon/heart.svg       " alt="">
                     </div>
                     <div class="advantage__header">Заботимся о здоровье</div>
                     <div class="advantage__descr">Мы работаем для того,<br> чтобы Ваши занятия спортом шли на пользу Вашему здоровью и были в радость Вам и Вашим близким!</div>
@@ -103,7 +104,6 @@
                 <input name="phone" required placeholder="Ваш телефон" type="number">
                 <input name="email" required placeholder="Ваше E-mail" type="email">
                 <button class="button button_submit" >ЗАКАЗАТЬ КОНСУЛЬТАЦИЮ</button>
-                
             </form>
         </div>
     </section>
@@ -396,7 +396,7 @@
 		<div class="container">
 			<div class="title">отзывы клиентов</div>
 			<div class="comment__wrapper">
-				<div class="comment-item">
+				<div class="comment-item animate__fadeInUp wow">
 					<img src="img/comment/1.png" alt="">
 					<div class="comment-item__text">
 					<div class="comment-item__name">Ирина Иванченко </div>
@@ -409,7 +409,7 @@
 					</div>
 				</div>
 
-				<div class="comment-item">
+				<div class="comment-item animate__fadeInUp wow">
 					<img src="img/comment/2.png" alt="">
 					<div class="comment-item__text">
 					<div class="comment-item__name">Иван Сёмочкин </div>
@@ -419,10 +419,10 @@
 						Купил пульсометр, ещё в подарок получил тренировку. Со мной вместе провели первую тренировку, научили пользоваться новым гаджетом. Также объяснили основы анатомии, составили план тренировок на месяц вперёд.<br><br>
 						С ними подготовился к своему первому полумарафону! Спасибо!!!
 					</div>
-					</div>
+					</div>  
 				</div>
 
-				<div class="comment-item">
+				<div class="comment-item animate__fadeInUp wow">
 					<img src="img/comment/3.png" alt="">
 					<div class="comment-item__text">
 					<div class="comment-item__name">Юлия Дашкина </div>
@@ -484,11 +484,20 @@
             <div class="modal__subtitle modal__subtitle_mini">Наш менеджер свяжется с вами в ближайшее время!</div>
         </div>
     </div>
+
+    <a href="#up" class="pageup">
+        <img src="icon/arrow-up-solid.svg" alt="up">
+    </a>
+    
+
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script src="js/slick.js"></script>
     <script src="js/jquery.validate.min.js"></script>
+    <script src="js/wow.min.js" ></script>
     <script src="js/script.js"></script>
+
+
 </body>
 
 </html>
